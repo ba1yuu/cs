@@ -7,7 +7,7 @@ This is a temporary script file.
 
 import random
 items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
-random.shuffle(items)
+random.shuffle(items)       #隨機排列
 answer=''
 a_count=0 
 b_count=0 
@@ -15,7 +15,7 @@ for i in range(4):
     answer+=str(items[i])
 while(True):
     number=input('Enter the number: ')
-    if not number.isdigit():
+    if not number.isdigit():     #是否為十進制
         pass
     else:
         if number==answer:
